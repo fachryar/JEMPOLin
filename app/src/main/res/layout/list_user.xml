@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <View
+            android:id="@+id/garis7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/uDecline"
+            android:background="@color/colorPrimaryDark"/>
+
+        <ImageButton
+            android:id="@+id/uDelete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/circular_button_red"
+            android:padding="6dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/delete" />
+
+        <Button
+            android:id="@+id/uVerify"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/uEmail"
+            android:layout_toLeftOf="@id/uDecline"
+            android:layout_alignTop="@id/uDecline"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/borderline"
+            android:scaleType="fitXY"
+            android:text="Verify"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/uDecline"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/uEmail"
+            android:background="@drawable/borderline_merah"
+            android:scaleType="fitXY"
+            android:text="Decline"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/uEmail"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/uNama"
+            android:layout_below="@id/uFungsi"
+            android:text="Email"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/uFungsi"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/uNama"
+            android:layout_below="@id/uNama"
+            android:text="Fungsi"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/uNama"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Nama"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

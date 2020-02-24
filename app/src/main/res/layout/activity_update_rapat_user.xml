@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UpdateRapat">
+
+    <Button
+        android:id="@+id/btnSubmit4"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editRequest4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewWaktu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Waktu Rapat"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSubject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Subject"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editHari4"
+        app:layout_constraintTop_toBottomOf="@+id/editHari4" />
+
+    <EditText
+        android:id="@+id/editSubject4"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewSubject2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubject2" />
+
+    <TextView
+        android:id="@+id/textViewRuangan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ruangan"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/textViewSubject2"
+        app:layout_constraintTop_toBottomOf="@+id/editSubject4" />
+
+    <Spinner
+        android:id="@+id/spinnerRuangan4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textViewRuangan2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRuangan2" />
+
+    <TextView
+        android:id="@+id/textViewPeserta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Peserta"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/textViewSubject2"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRuangan4" />
+
+    <EditText
+        android:id="@+id/editPeserta4"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewPeserta2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPeserta2" />
+
+    <TextView
+        android:id="@+id/textViewKet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Keterangan Tambahan"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/textViewPeserta2"
+        app:layout_constraintTop_toBottomOf="@+id/editPeserta4" />
+
+    <EditText
+        android:id="@+id/editRequest4"
+        android:layout_width="300dp"
+        android:layout_height="84dp"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Tidak wajib diisi..."
+        android:inputType="textMultiLine"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewKet2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKet2" />
+
+    <TextView
+        android:id="@+id/editHari4"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/borderline"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Hari, Tanggal"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewWaktu2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWaktu2" />
+
+    <TextView
+        android:id="@+id/textViewT"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:text="."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editHari4"
+        app:layout_constraintStart_toEndOf="@+id/editHari4"
+        app:layout_constraintTop_toTopOf="@+id/editHari4" />
+
+    <TextView
+        android:id="@+id/editMulai4"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/borderline"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="00:00"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editHari4"
+        app:layout_constraintStart_toEndOf="@+id/textViewT"
+        app:layout_constraintTop_toTopOf="@+id/editHari4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewT3"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:text="."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editMulai4"
+        app:layout_constraintStart_toEndOf="@+id/editMulai4"
+        app:layout_constraintTop_toTopOf="@+id/editMulai4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/editSelesai4"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/borderline"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="00:00"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewT3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewT3"
+        app:layout_constraintTop_toTopOf="@+id/textViewT3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/simpanHari4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

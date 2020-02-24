@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <ImageButton
+                android:id="@+id/aEdit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toLeftOf="@id/aDelete"
+                android:layout_alignTop="@id/aDelete"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/circular_button"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/pencil" />
+
+            <Button
+                android:id="@+id/aAccept"
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/aNama"
+                android:background="@drawable/borderline"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:text="Approve"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/aDelete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/circular_button_red"
+                android:padding="6dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/delete" />
+
+            <TextView
+                android:id="@+id/aNama"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/aHari"
+                android:layout_below="@id/aRequest"
+                android:paddingTop="8dp"
+                android:text="Nama Fungsi"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/aRequest"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/aHari"
+                android:layout_below="@id/aPeserta"
+                android:text="- Request"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/aPeserta"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/aHari"
+                android:layout_below="@id/aJam"
+                android:text="- Peserta"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/aRuangan"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/aHari"
+                android:layout_below="@id/aSubject"
+                android:text="- Ruangan"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/aSubject"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/aHari"
+                android:layout_below="@id/aHari"
+                android:text="- Subject"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aJam"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/aHari"
+                android:layout_below="@id/aRuangan"
+                android:text="- Jam"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/aHari"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:text="Hari"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

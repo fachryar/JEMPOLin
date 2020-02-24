@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <CheckBox
+                android:id="@+id/statusBox"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:checked="false"
+                android:clickable="false"
+                android:background="@drawable/waiting_selector"
+                android:button="@null"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:duplicateParentState="false" />
+
+            <CheckBox
+                android:id="@+id/statusBox2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:checked="false"
+                android:clickable="false"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/checked"
+                android:backgroundTint="@color/colorPrimary"
+                android:visibility="invisible"
+                android:button="@null"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:duplicateParentState="false" />
+
+            <TextView
+                android:id="@+id/textKategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/statusBox"
+                android:layout_marginLeft="38dp"
+                android:text="Your Heading"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/statusBox"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="8dp"
+                android:text="&#8942;"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textKategori"
+                android:layout_below="@id/textKategori"
+                android:text="Adit"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

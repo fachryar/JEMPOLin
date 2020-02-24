@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:elevation="4dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/OptionRapat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="&#8942;"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/statusBoxRapat_user"
+                android:layout_width="16dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_selector"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:duplicateParentState="false"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="173dp" />
+
+            <TextView
+                android:id="@+id/ttSubject"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/statusBoxRapat_user"
+                android:text="Subject"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ttJam"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ttSubject"
+                android:layout_below="@id/ttSubject"
+                android:layout_centerVertical="true"
+                android:text="- Jam"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ttRuangan"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ttSubject"
+                android:layout_below="@id/ttJam"
+                android:layout_centerVertical="true"
+                android:text="- Ruangan"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ttPeserta"
+                android:layout_width="280dp"
+                android:layout_height="18dp"
+                android:layout_alignLeft="@id/ttSubject"
+                android:layout_below="@id/ttRuangan"
+                android:layout_centerVertical="true"
+                android:text="Peserta"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ttRequest"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_alignLeft="@id/ttSubject"
+                android:layout_below="@id/ttPeserta"
+                android:layout_centerVertical="true"
+                android:text="Keterangan Tambahan"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ttPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ttRequest"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="Pending"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

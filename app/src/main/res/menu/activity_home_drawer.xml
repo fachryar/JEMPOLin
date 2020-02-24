@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_layout_laporin"
+            android:icon="@drawable/ic_report"
+            android:title="LAPOR.in" />
+        <item
+            android:id="@+id/nav_layout_rapatin"
+            android:icon="@drawable/ic_meeting"
+            android:title="RAPAT.in" />
+
+        <item
+            android:id="@+id/nav_layout_mobilin"
+            android:icon="@drawable/car_ic"
+            android:title="MOBIL.in" />
+
+        <item
+            android:id="@+id/nav_layout_pinjamin"
+            android:icon="@drawable/key"
+            android:title="PINJAM.in" />
+
+    </group>
+
+    <item android:title="Lain-Lain">
+        <menu>
+            <item
+                android:id="@+id/nav_layout_profil"
+                android:icon="@drawable/profile"
+                android:title="Profil" />
+            <item
+                android:id="@+id/nav_layout_logout"
+                android:icon="@drawable/keluar"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

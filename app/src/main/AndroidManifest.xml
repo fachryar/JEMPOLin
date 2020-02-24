@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.slain.android.slain">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:configChanges="orientation"
+        android:icon="@mipmap/ic_jempol"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_jempol"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:label="JEMPOL.in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginUser"
+            android:label="JEMPOL.in"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/registrasi"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MainActivityAdmin"
+            android:label="ADMIN.in" />
+        <activity
+            android:name=".FormPelaporan"
+            android:label="Form Pelaporan Kerusakan" />
+        <activity
+            android:name=".Laporin"
+            android:label="LAPOR.in" />
+        <activity
+            android:name=".DetailLaporan"
+            android:label="Detail Laporan Kerusakan" />
+        <activity
+            android:name=".AdminLaporin"
+            android:label="Daftar Pelaporan Kerusakan"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".AdminLaporinDetail"
+            android:label="Detail Laporan Kerusakan" />
+        <activity
+            android:name=".AdminAkun"
+            android:label="Daftar Akun"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rapatin"
+            android:label="RAPAT.in" />
+        <activity
+            android:name=".FormBookingRapat"
+            android:label="Form Reservasi Ruangan Rapat" />
+        <activity
+            android:name=".RapatUser"
+            android:label="Daftar Rapat Anda" />
+        <activity
+            android:name=".UpdateRapatUser"
+            android:label="Form Reservasi Ruangan Rapat" />
+        <activity
+            android:name=".AdminRapatin"
+            android:label="@string/title_activity_admin_rapatin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UpdateRapat"
+            android:label="Form Reservasi Ruangan Rapat" />
+        <activity
+            android:name=".FullScreenImage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile"
+            android:label="Profile" />
+        <activity
+            android:name=".LaporanSelesai"
+            android:label="Daftar Laporan Selesai" />
+        <activity
+            android:name=".Mobilin"
+            android:label="MOBIL.in" />
+        <activity
+            android:name=".FormBookingMobil"
+            android:label="Form Peminjaman Mobil" />
+        <activity
+            android:name=".UpdateMobilUser"
+            android:label="Form Peminjaman Mobil" />
+        <activity
+            android:name=".AdminMobilin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminProsesMobil"
+            android:label="Form Pemilihan Mobil" />
+        <activity
+            android:name=".UpdateMobil"
+            android:label="Form Peminjaman Mobil" />
+        <activity
+            android:name=".AdminPinjamin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pinjamin"
+            android:label="PINJAM.in" />
+        <activity
+            android:name=".FormBookingBarang"
+            android:label="Form Peminjaman Barang" />
+        <activity
+            android:name=".UpdateBarangUser"
+            android:label="Form Peminjaman Barang" />
+        <activity
+            android:name=".UpdateBarang"
+            android:label="Form Peminjaman Barang" />
+
+        <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+
+    </application>
+
+</manifest>

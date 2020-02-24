@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_lapor"
+        android:icon="@drawable/ic_lapor"
+        android:title="@string/title_report" />
+    <item
+        android:id="@+id/nav_rapat"
+        android:icon="@drawable/ic_rapat"
+        android:title="@string/title_meeting" />
+    <item
+        android:id="@+id/nav_akun"
+        android:icon="@drawable/ic_akun"
+        android:title="@string/title_profile" />
+
+</menu>

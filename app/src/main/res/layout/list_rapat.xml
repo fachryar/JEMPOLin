@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:elevation="4dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <View
+                android:id="@+id/garis6"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tHari" />
+
+            <CheckBox
+                android:id="@+id/statusBoxRapat"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/waiting_selector"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:duplicateParentState="false"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="173dp" />
+
+            <CheckBox
+                android:id="@+id/statusR_subject"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/information"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:duplicateParentState="false"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/tSubject"
+                app:layout_constraintEnd_toStartOf="@+id/tSubject"
+                app:layout_constraintTop_toTopOf="@+id/tSubject"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <CheckBox
+                android:id="@+id/statusR_ruangan"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/meeting_point"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:duplicateParentState="false"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/tRuangan"
+                app:layout_constraintEnd_toStartOf="@+id/tRuangan"
+                app:layout_constraintTop_toTopOf="@+id/tRuangan" />
+
+            <CheckBox
+                android:id="@+id/statusR_jam"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/time"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:duplicateParentState="false"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/tJam"
+                app:layout_constraintEnd_toStartOf="@+id/tJam"
+                app:layout_constraintTop_toTopOf="@+id/tJam"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <CheckBox
+                android:id="@+id/statusR_peserta"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/user_ic"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:duplicateParentState="false"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/textView29"
+                app:layout_constraintEnd_toStartOf="@+id/textView29"
+                app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+            <TextView
+                android:id="@+id/tHari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Hari"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tSubject"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Subject"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.557"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/garis6" />
+
+            <TextView
+                android:id="@+id/tRuangan"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Ruangan"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/tSubject"
+                app:layout_constraintStart_toStartOf="@+id/tSubject"
+                app:layout_constraintTop_toBottomOf="@+id/tSubject" />
+
+            <TextView
+                android:id="@+id/tJam"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Jam sdasdasdasdadasdsadsa"
+                app:layout_constraintEnd_toEndOf="@+id/tRuangan"
+                app:layout_constraintStart_toStartOf="@+id/tRuangan"
+                app:layout_constraintTop_toBottomOf="@+id/tRuangan" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Peserta Rapat :"
+                app:layout_constraintStart_toStartOf="@+id/tJam"
+                app:layout_constraintTop_toBottomOf="@+id/tJam" />
+
+            <TextView
+                android:id="@+id/tPeserta"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="List Peserta"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@+id/textView29"
+                app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+            <TextView
+                android:id="@+id/tNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/nama"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tPeserta"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">JEMPOL.in</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_report">Pelaporan</string>
+    <string name="title_meeting">Ruang Rapat</string>
+    <string name="title_profile">Akun</string>
+
+    <string name="auth_failed">Autentikasi gagal, cek kembali email dan password Anda</string>
+
+    <string name="logout">Log Out</string>
+    <string name="login">Log In</string>
+    <string name="kategori">Kategori Laporan</string>
+    <string name="mobildinas">Mobil Dinas</string>
+    <string name="rujabrudin">Rujab/Rudin</string>
+    <string name="perangkatit">Perangkat IT</string>
+    <string name="taman">Taman</string>
+    <string name="cubicle">Cubicle</string>
+    <string name="fasilitas_lain">Fasilitas Lain</string>
+    <string name="submit">Submit</string>
+    <string name="kirim">Kirim</string>
+    <string name="upload_gambar">Upload Gambar</string>
+    <string name="lapor">lapor</string>
+    <string name="gambarbawah">Klik gambar dibawah untuk memilih foto profil</string>
+    <string name="laporin">LAPOR.in disini</string>
+
+    <string name="pegawai">Pegawai</string>
+    <string name="nama">Nama</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="password">Password</string>
+    <string name="fungsi">Fungsi</string>
+    <string name="Email">Email</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="simpan">Simpan</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie nisi dui.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie nisi dui. </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Spinner Fungsi -->
+    <string name="spinner_prompt">Funsi</string>
+    <string-array name="fungsi_array">
+        <item>SLA</item>
+        <item>FK3</item>
+        <item>SLA</item>
+        <item>FK3</item>
+        <item>SLA</item>
+        <item>FK3</item>
+    </string-array>
+
+    <string name="title_activity_admin_laporin">AdminLaporin</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_admin_rapatin">AdminRapatin</string>
+
+
+</resources>
